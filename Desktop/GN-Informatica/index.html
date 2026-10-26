@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechStore — Loja e Assistência Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. CABEÇALHO -->
+<header>
+  <div class="container header-inner">
+    <a href="#inicio" class="logo"><span class="logo-mark">⚡</span> TechStore</a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#assistencia">Assistência Técnica</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="shortcuts">
+      <a href="#produtos" class="shortcut" title="Buscar produtos" aria-label="Buscar produtos">🔍</a>
+      <a href="#assistencia" class="shortcut" title="Assistência técnica" aria-label="Assistência técnica">🛠️</a>
+      <a href="#contato" class="shortcut" title="Pedido / Carrinho" aria-label="Pedido">🛒<span class="badge">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Loja &amp; Assistência</span>
+        <h1>Tecnologia que funciona, do balcão ao conserto.</h1>
+        <p>Encontre os melhores produtos e conte com uma assistência técnica de confiança, tudo em um só lugar.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-primary">Ver produtos</a>
+          <a href="#assistencia" class="btn btn-outline">Solicitar orçamento</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">💻</div>
+    </div>
+  </section>
+
+  <!-- 2. PRODUTOS -->
+  <section id="produtos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Catálogo</span>
+        <h2>Nossos produtos</h2>
+        <p>Pesquise, filtre e encontre o que você precisa.</p>
+      </div>
+
+      <form class="search-bar" role="search" action="#">
+        <input type="search" placeholder="Buscar por nome, marca ou modelo..." aria-label="Buscar produtos">
+        <button type="button" class="btn btn-primary">Buscar</button>
+      </form>
+
+      <div class="catalog">
+        <aside class="filters" aria-label="Filtros">
+          <h3>Filtros</h3>
+          <div class="filter-group">
+            <h4>Categorias</h4>
+            <label class="check"><input type="checkbox" checked> Celulares</label>
+            <label class="check"><input type="checkbox"> Notebooks</label>
+            <label class="check"><input type="checkbox"> Acessórios</label>
+            <label class="check"><input type="checkbox"> Periféricos</label>
+            <label class="check"><input type="checkbox"> Peças e componentes</label>
+          </div>
+          <div class="filter-group">
+            <h4>Faixa de preço</h4>
+            <div class="price-row">
+              <input type="number" placeholder="Mín" aria-label="Preço mínimo">
+              <input type="number" placeholder="Máx" aria-label="Preço máximo">
+            </div>
+          </div>
+          <div class="filter-group">
+            <h4>Ordenar por</h4>
+            <select aria-label="Ordenar">
+              <option>Mais relevantes</option>
+              <option>Menor preço</option>
+              <option>Maior preço</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary btn-block">Aplicar filtros</button>
+        </aside>
+
+        <div class="products">
+          <article class="card">
+            <div class="card-img">📱<span class="tag">Novo</span></div>
+            <div class="card-body">
+              <span class="card-cat">Celulares</span>
+              <h3 class="card-title">Smartphone Alpha X 128GB</h3>
+              <p class="card-price">R$ 1.899,00<small>ou 10x de R$ 189,90</small></p>
+              <a href="#contato" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">💻</div>
+            <div class="card-body">
+              <span class="card-cat">Notebooks</span>
+              <h3 class="card-title">Notebook Pro 15" 16GB SSD</h3>
+              <p class="card-price">R$ 4.299,00<small>ou 10x de R$ 429,90</small></p>
+              <a href="#contato" class="btn btn-primary">Comprar</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">🎧<span class="tag">-15%</span></div>
+            <div class="card-body">
+              <span class="card-cat">Acessórios</span>
+              <h3 class="card-title">Headset Wireless Pulse</h3>
+              <p class="card-price">R$ 249,00<small>à vista no Pix</small></p>
+              <a href="#contato" class="btn btn-primary">Comprar</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img"><img src="https://tse4.mm.bing.net/th/id/OIP.wmhKeWcKx2twJAAhg7HdDgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="teclado" width="100%" height="100%"></div>
+            <div class="card-body">
+              <span class="card-cat">Periféricos</span>
+              <h3 class="card-title">Teclado Mecânico RGB</h3>
+              <p class="card-price">R$ 329,00<small>ou 6x de R$ 54,83</small></p>
+              <a href="#contato" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img"><img src="https://tse1.mm.bing.net/th/id/OIP.C3HvxFpla64N71IbcpYDAwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="mouse" width="100%" height="100%"></div>
+            <div class="card-body">
+              <span class="card-cat">Periféricos</span>
+              <h3 class="card-title">Mouse Gamer 12000 DPI</h3>
+              <p class="card-price">R$ 159,00<small>à vista no Pix</small></p>
+              <a href="#contato" class="btn btn-primary">Comprar</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">🔋</div>
+            <div class="card-body">
+              <span class="card-cat">Peças</span>
+              <h3 class="card-title">Bateria Universal 5000mAh</h3>
+              <p class="card-price">R$ 89,90<small>à vista no Pix</small></p>
+              <a href="#contato" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ASSISTÊNCIA TÉCNICA -->
+  <section id="assistencia" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Assistência Técnica</span>
+        <h2>Conserto rápido e com garantia</h2>
+        <p>Conheça nossos serviços e peça um orçamento sem compromisso.</p>
+      </div>
+
+      <div class="service-layout">
+        <div class="services">
+          <div class="service"><div class="icon">📱</div><h3>Troca de tela</h3><p>Telas originais e compatíveis para diversos modelos.</p></div>
+          <div class="service"><div class="icon">🔋</div><h3>Troca de bateria</h3><p>Mais autonomia para o seu aparelho.</p></div>
+          <div class="service"><div class="icon">💾</div><h3>Formatação e software</h3><p>Instalação de sistema, backup e remoção de vírus.</p></div>
+          <div class="service"><div class="icon">🔧</div><h3>Reparo em placa</h3><p>Diagnóstico e micro-soldagem especializada.</p></div>
+        </div>
+
+        <div class="form-card">
+          <h3>Solicitar orçamento</h3>
+          <p>Preencha os dados e retornaremos o mais breve possível.</p>
+          <form action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome completo">
+              </div>
+              <div class="field">
+                <label for="contato-orc">Contato</label>
+                <input id="contato-orc" type="text" placeholder="Telefone ou e-mail">
+              </div>
+              <div class="field full">
+                <label for="equip">Equipamento</label>
+                <input id="equip" type="text" placeholder="Ex.: Notebook Dell Inspiron 15">
+              </div>
+              <div class="field full">
+                <label for="defeito">Descrição do defeito / serviço</label>
+                <textarea id="defeito" placeholder="Descreva o que está acontecendo..."></textarea>
+              </div>
+              <div class="field full">
+                <button type="button" class="btn btn-primary btn-block">Enviar solicitação</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CONTATO E CONVERSÃO -->
+  <section id="contato">
+    <div class="container">
+      <div class="cta">
+        <h2>Prefere falar direto com a gente?</h2>
+        <p>Atendimento rápido pelo WhatsApp: tire dúvidas, peça preços e acompanhe seu reparo.</p>
+        <a href="https://wa.me/5581983252827" class="btn btn-wa">💬 Chamar no WhatsApp</a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="panel">
+          <h3>Pedido ou orçamento rápido</h3>
+          <form action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="q-nome">Nome</label>
+                <input id="q-nome" type="text" placeholder="Seu nome">
+              </div>
+              <div class="field">
+                <label for="q-tel">WhatsApp</label>
+                <input id="q-tel" type="tel" placeholder="(00) 00000-0000">
+              </div>
+              <div class="field full">
+                <label for="q-tipo">Tipo de solicitação</label>
+                <select id="q-tipo">
+                  <option>Pedido de produto</option>
+                  <option>Orçamento de reparo</option>
+                  <option>Outro assunto</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="q-msg">Mensagem</label>
+                <textarea id="q-msg" placeholder="O que você procura?"></textarea>
+              </div>
+              <div class="field full">
+                <button type="button" class="btn btn-primary btn-block">Enviar solicitação rápida</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Informações</h3>
+          <ul class="info-list">
+            <li><strong>📍 Endereço</strong>Rua Exemplo, 123 — Centro</li>
+            <li><strong>🕒 Horário</strong>Seg a Sex: 9h às 18h · Sáb: 9h às 13h</li>
+            <li><strong>📞 Telefone</strong>(81) 99999-9999</li>
+            <li><strong>✉️ E-mail</strong>contato@techstore.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 TechStore. Todos os direitos reservados.</span>
+    <span>Protótipo visual — wireframe estático</span>
+  </div>
+</footer>
+
+</body>
+</html>
